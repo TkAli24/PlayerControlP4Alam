@@ -5,16 +5,17 @@ using UnityEngine.UIElements;
 
 public class OnComing : MonoBehaviour
 {
-    [SerializeField] private GameObject Car;
+    public float speed = 15.0f;
     // Start is called before the first frame update
+
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }
